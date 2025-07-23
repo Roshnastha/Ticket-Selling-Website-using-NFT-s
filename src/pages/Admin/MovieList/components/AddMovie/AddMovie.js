@@ -1,3 +1,5 @@
+// ✅ File: src/pages/Admin/MovieList/components/AddMovie/AddMovie.js
+
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
@@ -65,12 +67,6 @@ class AddMovie extends Component {
       this.setState({ title, genre, language });
     }
   }
-
-  handleChange = e => {
-    this.setState({
-      state: e.target.value
-    });
-  };
 
   handleFieldChange = (field, value) => {
     const newState = { ...this.state };

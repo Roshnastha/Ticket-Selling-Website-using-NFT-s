@@ -1,17 +1,34 @@
+// client/src/data/MovieDataService.js
+
+import MoviesData from './MoviesData';
+
 export const genreData = [
-  'action',
-  'adventure',
-  'comedy',
-  'drama',
-  'fantasy',
-  'historical',
-  'horror',
-  'mystery',
-  'romance',
-  'science fiction',
-  'thriller',
-  'political',
-  'western'
+  'Action',
+  'Comedy',
+  'Drama',
+  'Fantasy',
+  'Horror',
+  'Mystery',
+  'Romance',
+  'Thriller',
+  'Western',
+  'Sci-Fi',
 ];
 
-export const languageData = ['english', 'greek', 'german', 'french'];
+export const languageData = [
+  'English',
+  'Hindi',
+  'Nepali',
+  'French',
+  'Spanish',
+  'Korean',
+  'Japanese',
+];
+
+const MovieDataService = {
+  getAllMovies: () => {
+    return Promise.resolve(MoviesData); // fake API
+  },
+};
+
+export default MovieDataService;
